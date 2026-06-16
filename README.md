@@ -1,4 +1,5 @@
 # Finanz Dashboard
+<img width="1893" height="888" alt="Screenshot 2026-06-17 014952" src="https://github.com/user-attachments/assets/572c7a75-2b0f-4f54-adff-b5dec481ccbb" />
 
 Privates, lokales Finanz-Dashboard. Laravel 11 + Livewire 3 + SQLite, lauffähig über Docker.
 Konzept und Roadmap: siehe [KONZEPT.md](KONZEPT.md).
