@@ -1,0 +1,16 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: finanz-dashboard
+    ports:
+      - "8000:8000"
+    # Quellcode wird gemountet -> Code-Änderungen sofort wirksam, kein Rebuild.
+    # Die SQLite-Datei liegt unter ./database und bleibt damit dauerhaft erhalten.
+    volumes:
+      - .:/app
+    environment:
+      # Innerhalb des Containers ist das Projekt unter /app gemountet.
+      DB_DATABASE: /app/database/finanz.sqlite
+    restart: unless-stopped
